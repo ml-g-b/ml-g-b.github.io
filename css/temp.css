@@ -1,0 +1,13 @@
+body{
+  display : flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.building{
+  width : 50vw;
+  height: 50vh;
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px #000;
+}
