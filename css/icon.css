@@ -8,6 +8,14 @@
   height : auto;
   width : 80%;
 }
+
+.horizontal-list img{
+  text-align : center;
+  margin : 0;
+  margin-right : 5px;
+  list-style : none;
+  height : 2em;
+}
   
 .prog_lang{
   height : 100%;
