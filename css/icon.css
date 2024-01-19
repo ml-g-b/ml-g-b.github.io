@@ -1,0 +1,18 @@
+.horizontal-list{
+  margin : auto;
+  text-align : center;
+  display : flex;
+  padding-left : 0;
+  margin-left : 15px;
+  flex-wrap : wrap;
+  height : auto;
+  width : 80%;
+}
+  
+.prog_lang{
+  height : 100%;
+}
+
+.prog_lang:hover{
+  transform : scale(1.25);
+}
