@@ -5,11 +5,13 @@
     --sgdf-color-cp: #007254;
     --sgdf-color-main: #003a5d;
     --sgdf-color-main-dark: #001a30;
+    --sgdf-font: 'Sarabun';
 }
 
 body{
     margin: 0;
     padding: 100px 0;
+    font-family: var(--sgdf-font);
 }
 
 header, footer{
