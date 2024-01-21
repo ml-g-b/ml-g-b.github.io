@@ -5,7 +5,7 @@
     --sgdf-color-cp: #007254;
     --sgdf-color-main: #003a5d;
     --sgdf-color-main-dark: #001a30;
-    --sgdf-font: 'Sarabun';
+    --sgdf-font: "Sarabun";
 }
 
 body{
@@ -47,4 +47,8 @@ a, a:visited{
 
 h1, h2, h3{
     text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, a{
+        font-family: var(--sgdf-font);
 }
