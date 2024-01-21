@@ -5,13 +5,14 @@
     --sgdf-color-cp: #007254;
     --sgdf-color-main: #003a5d;
     --sgdf-color-main-dark: #001a30;
-    --sgdf-font: "Sarabun";
+    --sgdf-font-text: "Sarabun";
+    --sgdf-font-title: "Raleway";
 }
 
 body{
     margin: 0;
     padding: 100px 0;
-    font-family: var(--sgdf-font);
+    font-family: var(--sgdf-font-text);
 }
 
 header, footer{
@@ -45,10 +46,14 @@ a, a:visited{
     font-style: italic;
 }
 
+header h1{
+    font-family: var(--sgdf-font-title);
+}
+
 h1, h2, h3{
     text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6, p, li, a{
-        font-family: var(--sgdf-font);
+        font-family: var(--sgdf-font-text);
 }
