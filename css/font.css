@@ -1,4 +1,9 @@
 @font-face{
     font-family : "Sarabun";
-    src: url("../font/Sarabun-Light.ttf")
+    src: local("Sarabun"), url("../font/Sarabun-Light.ttf")
+}
+
+@font-face{
+  font-family : "Raleway";
+  src: local("Raleway"), url("../font/Raleway-Medium.ttf");
 }
