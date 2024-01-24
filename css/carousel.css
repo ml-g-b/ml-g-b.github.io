@@ -1,5 +1,6 @@
       .carousel-container{
         width: 80%;
+        max-width: 80%;
         height: 500px;
         display: flex;
         align-items: center;
@@ -12,7 +13,8 @@
         margin-bottom: 25px;
       }
       .current_carousel_img{
-        height: 90%;;
+        height: 90%;
+        max-width: 80%;
       }
       .carousel-before, .carousel-after{
         background: none;
