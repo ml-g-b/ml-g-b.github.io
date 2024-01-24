@@ -28,7 +28,7 @@
         user-select: none;
         border-color: #fff;
         font-size: 3em;
-        font-style: none;
+        font-style: normal;
       }
 
       .arrow:hover{
