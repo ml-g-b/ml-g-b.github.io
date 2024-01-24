@@ -1,0 +1,37 @@
+      .carousel-container{
+        width: 80%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        background-color: #003a5d;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px #000;
+        margin-bottom: 25px;
+      }
+      .current_carousel_img{
+        height: 90%;;
+      }
+      .carousel-before, .carousel-after{
+        background: none;
+        cursor: pointer;
+        width: auto;
+        padding: 16px;
+        margin: auto;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 10px;
+        user-select: none;
+        border-color: #fff;
+        font-size: 3em;
+      }
+
+      .arrow:hover{
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+      }
