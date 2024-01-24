@@ -28,6 +28,7 @@
         user-select: none;
         border-color: #fff;
         font-size: 3em;
+        font-style: none;
       }
 
       .arrow:hover{
