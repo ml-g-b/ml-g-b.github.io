@@ -2,6 +2,8 @@
   margin : auto;
   text-align : center;
   display : flex;
+  align-items: center;
+  justify-content: center;
   padding-left : 0;
   margin-left : 15px;
   flex-wrap : wrap;
@@ -14,7 +16,7 @@
   margin : 0;
   margin-right : 5px;
   list-style : none;
-  height : 2em;
+  height : 3em;
 }
   
 .prog_lang{
