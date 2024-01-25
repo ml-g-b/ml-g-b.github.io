@@ -20,7 +20,6 @@
         position: absolute;
         top: 10%;
         margin: auto;
-        transform: scale(1.5);
       }
       .carousel-before, .carousel-after{
         background: none;
