@@ -22,6 +22,9 @@
     </header>
     <section class="main">
       <project name="sai">SAI Project</project>
+      <project name="sai" disabled>SAI Project</project>
+      <project name="sai" disabled>SAI Project</project>
+      <project name="sai" disabled>SAI Project</project>
     </section>
     <footer class="flexer">
       Go back to main website&nbsp;<a href="https://mlgb.fr">here</a>
@@ -32,18 +35,20 @@
     const projectContainer=document.querySelector(".main")
     const main=document.createElement("div")
     projectList.forEach(function(e){
-      const div=document.createElement("div")
-      const a=document.createElement("a")
-      const span=document.createElement("span")
-      a.href=(window.location.href.slice(-1)=="/") ? window.location.href+e.getAttribute("name") : window.location.href+"/"+e.getAttribute("name");
-      a.innerHTML="here"
-      a.style.color="var(--color-sgdf)"
-      span.innerHTML=e.innerHTML+" "
-      span.appendChild(a)
-      div.classList.add("block")
-      div.appendChild(span)
-      main.appendChild(div)
-      e.remove()
+      if(e.getAttribute("disabled")){
+        const div=document.createElement("div")
+        const a=document.createElement("a")
+        const span=document.createElement("span")
+        a.href=(window.location.href.slice(-1)=="/") ? window.location.href+e.getAttribute("name") : window.location.href+"/"+e.getAttribute("name");
+        a.innerHTML="here"
+        a.style.color="var(--color-sgdf)"
+        span.innerHTML=e.innerHTML+" "
+        span.appendChild(a)
+        div.classList.add("block")
+        div.appendChild(span)
+        main.appendChild(div)
+      }
+      e.romove()
     })
     projectContainer.appendChild(main)
   </script>
