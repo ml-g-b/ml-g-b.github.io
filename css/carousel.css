@@ -17,7 +17,7 @@
         max-width: 70%;
       }
       .current_carousel_img:hover{
-        transform: scale(2);
+        transform: scale(1.5);
       }
       .carousel-before, .carousel-after{
         background: none;
