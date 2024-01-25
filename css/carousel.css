@@ -16,6 +16,9 @@
         max-height: 90%;
         max-width: 70%;
       }
+      .current_carousel_img:hover{
+        transform: scale(2);
+      }
       .carousel-before, .carousel-after{
         background: none;
         cursor: pointer;
