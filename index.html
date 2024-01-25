@@ -35,7 +35,7 @@
       const div=document.createElement("div")
       const a=document.createElement("a")
       const span=document.createElement("span")
-      a.href=(window.location.href[-1]=="/") ? window.location.href+e.getAttribute("name") : window.location.href+"/"+e.getAttribute("name");
+      a.href=(window.location.href.slice(-1)=="/") ? window.location.href+e.getAttribute("name") : window.location.href+"/"+e.getAttribute("name");
       a.innerHTML="here"
       a.style.color="var(--color-sgdf)"
       span.innerHTML=e.innerHTML+" "
