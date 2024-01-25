@@ -26,6 +26,7 @@
   max-height: 80vh;
   max-width: 70vw;
   z-index: 999;
+  transform: translate(-50%,-50%);
 }
 
 .carousel-before,
