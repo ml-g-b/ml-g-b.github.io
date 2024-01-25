@@ -57,3 +57,16 @@ h1, h2, h3{
 h1, h2, h3, h4, h5, h6, p, li, a{
         font-family: var(--sgdf-font-text);
 }
+
+div.block{
+    width: 80%;
+    height: auto;
+    padding: 25px;
+    margin: auto;
+    margin-top: 25px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 2em;
+    color: #003a5d;
+    box-shadow: 0 0 10px #000;
+}
