@@ -19,7 +19,7 @@
       .current_carousel_img:hover{
         position: fixed;
         margin: auto;
-        top: 0;
+        top: 10vh;
         max-height: 90vh;
         max-width: 70vw;
       }
