@@ -17,9 +17,10 @@
         max-width: 70%;
       }
       .current_carousel_img:hover{
-        position: absolute;
-        top: 10%;
+        position: fixed;
         margin: auto;
+        max-height: 90vh;
+        max-width: 70vw;
       }
       .carousel-before, .carousel-after{
         background: none;
