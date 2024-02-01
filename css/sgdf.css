@@ -41,7 +41,7 @@ div.main{
     padding: 10px 25px;
 }
 
-a, a:visited{
+a:not(.normal), a:not(.normal):visited{
     color:#fff;
     font-style: italic;
 }
