@@ -17,6 +17,7 @@
  display: block;
  cursor: pointer;
  color: #000;
+ font-size: 1.2em;
 }
 
 .dropdown-content a.selected{
@@ -34,8 +35,18 @@ background-color: #aaa;
  display: block;
 }
 
+.dropdown button{
+    width: calc(1.618 * 2 * 50px);
+    height: 50px;
+    font-size: 1.25em;
+}
+
 .project-table{
     width: 80%;
     height: auto;
     margin: auto;
+}
+
+.project-table thead tr td{
+    font-size: 2em;
 }

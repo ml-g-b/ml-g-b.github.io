@@ -42,6 +42,7 @@ class Project{
     }
 }
 
+
 const projectList=document.querySelectorAll("project")
 const listOfProj=[]
 const table=document.querySelector(".project-tbody")
@@ -67,11 +68,19 @@ function toggleItem(itemId) {
 
 function sortProject() {
     const items = document.querySelectorAll(".dropdown-content a.selected")
+    const liste=document.querySelector(".project-keywords")
     const selectedItems = []
     items.forEach(function (i) {
         selectedItems.push(i.getAttribute("value"))
     })
     table.innerHTML = ""
+    liste.innerHTML=""
+    if(items.length>0){
+        liste.innerHTML="Selected keywords: <code class='lang bg'>"+selectedItems.join("</code>, <code class='lang bg'>")+"</code>"
+    }
+    else{
+        liste.innerHTML="Selected keywords: <code class='lang bg'>All</code>"
+    }
     console.log(selectedItems)
     listOfProj.forEach(function (p) {
         var display = (items.length==0)
@@ -84,3 +93,12 @@ function sortProject() {
         console.log(p)
     })
 }
+
+document.addEventListener('DOMContentLoaded', sortProject)
+
+document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById("myDropdown");
+    if (!event.target.matches('.dropdown') && !event.target.matches('.dropbtn') && !event.target.matches('.dropdown-content a')) {
+        dropdown.classList.remove('show');
+    }
+});

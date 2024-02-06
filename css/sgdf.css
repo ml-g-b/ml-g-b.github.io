@@ -70,3 +70,14 @@ div.block{
     color: #003a5d;
     box-shadow: 0 0 10px #000;
 }
+
+code.lang{
+    background-color: #999;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+
+code.bg{
+    background-color: var(--sgdf-color-main);
+    color: #fff;
+}
