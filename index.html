@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/sgdf.css">
     <link rel="stylesheet" href="css/icon.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/project.css">
   </head>
   <body>
     <!--<div class="building"><h1>Site in building</h1></div>-->
@@ -21,38 +22,32 @@
       <h1>Website in construction</h1>
     </header>
     <section class="main">
-      <project name="sai">SAI Project</project>
-      <project name="pedaSGDF">Web development project</project>
+      <project name="sai" type="game">SAI Project</project>
+      <project name="pedaSGDF" type="web game">Web development project</project>
       <project name="sai" disabled>SAI Project</project>
       <project name="sai" disabled>SAI Project</project>
     </section>
+    <table class="project-table">
+      <thead class="project-thead">
+        <tr>
+          <th><div class="dropdown" id="myDropdown">
+            <button onclick="toggleDropdown()" class="dropbtn">Select Items</button>
+            <div class="dropdown-content" id="dropdownItems">
+                <a id="web" onclick="toggleItem('web')" value="web">Web</a>
+                <a id="game" onclick="toggleItem('game')" value="game">Game</a>
+            </div>
+            <button onclick="sortProject()" class="sortBtn">Sort button</button>
+        </div>
+        </th>
+        </tr>
+      </thead>
+      <tbody class="project-tbody">
+
+      </tbody>
+    </table>
     <footer class="flexer">
       Go back to main website&nbsp;<a href="https://mlgb.fr">here</a>
     </footer>
   </body>
-  <script>
-    const projectList=document.querySelectorAll("project")
-    const projectContainer=document.querySelector(".main")
-    const main=document.createElement("div")
-    projectList.forEach(function(e){
-      if(e.getAttribute("disabled")==""){
-        ;
-      }
-      else{
-        const div=document.createElement("div")
-        const a=document.createElement("a")
-        const span=document.createElement("span")
-        a.href=(window.location.href.slice(-1)=="/") ? window.location.href+e.getAttribute("name") : window.location.href+"/"+e.getAttribute("name");
-        a.innerHTML="here"
-        a.style.color="var(--color-sgdf)"
-        span.innerHTML=e.innerHTML+" "
-        span.appendChild(a)
-        div.classList.add("block")
-        div.appendChild(span)
-        main.appendChild(div)
-      }
-      e.remove()
-    })
-    projectContainer.appendChild(main)
-  </script>
+  <script src="script/project.js"></script>
 <html>
