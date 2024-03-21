@@ -94,6 +94,12 @@ function sortProject() {
     })
 }
 
+const container=document.querySelector(".project-container")
+listOfProj.forEach(function(p){
+    container.appendChild(p.htmlBlock())
+})
+
+/*
 document.addEventListener('DOMContentLoaded', sortProject)
 
 document.addEventListener('click', function(event) {
@@ -102,3 +108,4 @@ document.addEventListener('click', function(event) {
         dropdown.classList.remove('show');
     }
 });
+*/

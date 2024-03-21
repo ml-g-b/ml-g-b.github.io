@@ -1,0 +1,10 @@
+<project-list>
+    <project>
+        <name>SAI Project (Synthesis and image animation)</name>
+        <image name="sai.png"/>
+        <codelist>
+            <code name="C"/>
+        </codelist>
+        <description>None</description>
+    </project>
+</project-list>
